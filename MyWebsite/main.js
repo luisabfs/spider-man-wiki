@@ -1,7 +1,8 @@
 (function(doc) {
     'use strict';
+    
     const topnavEl = doc.querySelector('#topnavClick');
-    const dropdownEl = doc.getElementById("dropdownClick");
+    const dropdownEl = doc.querySelector('#dropdownClick');
 
     dropdownEl.addEventListener('click', dropdownMenu, false);
 
