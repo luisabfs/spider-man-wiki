@@ -86,11 +86,11 @@ ul.topnav li.dropdownIcon {
 
 /* ########### CUSTOM STYLES ########## */
 #gradient {
-    background-image: linear-gradient(to bottom, #e60000 , #ff6666);
+    background-image: linear-gradient(to right, #e60000 , #ff6666);
 }
 
 .leftside-col {
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 .rightside-col {
@@ -99,13 +99,15 @@ ul.topnav li.dropdownIcon {
 
 h1.large {
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0;
     line-height: 70px;
 }
 
 form h2 {
     color: #fff;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
 
 input[type="text"] {
@@ -146,5 +148,26 @@ input[type="text"] {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.leftside-col, 
+    div.rightside-col {
+        margin: 15px;
+    }
+
+    input[type="text"] {
+        width: 300px;
+    }
+
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
     }
 }
