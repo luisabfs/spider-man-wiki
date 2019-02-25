@@ -20,11 +20,30 @@ p {
     line-height: 1;
 }
 
+article p {
+    font-size: 25px;
+    padding: 20px; 
+    margin-block-start: 0; 
+}
+
+button {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #e60000;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border: 0;
+    border-radius: 7px;
+}
+
 .container {
     width: 100%;
     margin: auto;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .row{
@@ -46,7 +65,8 @@ p {
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
+.col-7 {width: 58.33%; 
+    text-align: center;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
@@ -64,7 +84,7 @@ nav {
 }
 
 nav ul {
-    background-color: #eee;
+    background-color:  rgb(238, 238, 238);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -86,7 +106,7 @@ ul.topnav li a {
     text-align: center;
     padding: 14px;
     text-transform: uppercase; 
-    color: #666;
+    color: #000;
 }
 
 ul.topnav li a:hover {
@@ -100,7 +120,7 @@ ul.topnav li.dropdownIcon {
 
 /* ########### CUSTOM STYLES ########## */
 #gradient {
-    background-image: linear-gradient(to top, #e60000 , #ff6666);
+    background-image: linear-gradient(to top, #e60000 , #ff4d4d);
 }
 
 div.box {
@@ -113,19 +133,6 @@ div.box {
         0 2px 3px 0 rgba(0, 0, 0,.1);
 }
 
-button {
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #e60000;
-    padding: 15px 60px;
-    display: block;
-    text-align: center;
-    margin: 5px;
-    border: 0;
-    border-radius: 7px;
-}
-
 button.learnMore {
     display: block;
     margin: auto;
@@ -133,6 +140,17 @@ button.learnMore {
 
 div.icon {
     width: 100%;
+}
+
+.resizeImg img {
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    box-shadow: -2px/*H*/ -2px/*V*/ 20px/*B*/ 2px/*S*/
+        rgba(0/*Sh*/, 0/*BG*/, 0/*BX*/,.15/*Op*/
+        ), 2px 2px 4px 2px rgba(0, 0, 0,.1);
 }
 
 .leftside-col {
@@ -145,7 +163,7 @@ div.icon {
 
 h1.large {
     color: #fff;
-    font-size: 45px;
+    font-size: 55px;
     margin: 0;
     line-height: 70px;
 }
@@ -202,7 +220,7 @@ input[type="text"] {
         text-align: left;
     }
 
-    .col-6, .col-4 {
+    .col-7, .col-5 , .col-6, .col-4 {
         width: 100%;
         margin: 0;
     }
@@ -210,6 +228,14 @@ input[type="text"] {
     div.box {
         padding: 5px;
         display: block;
+    }
+
+    .resizeImg {
+        margin: 10px;
+    }
+
+    .resizeImg img {
+        width: 100%;
     }
 
     div.leftside-col, 
