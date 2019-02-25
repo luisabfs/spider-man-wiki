@@ -189,6 +189,28 @@ input[type="text"] {
     border-radius: 5px;
 }
 
+footer.footsy {
+    background-color: rgb(238, 238, 238);
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: #000;
+    font-size: 30px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 /* ############### MOBILE ########### */
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
@@ -220,9 +242,17 @@ input[type="text"] {
         text-align: left;
     }
 
-    .col-7, .col-5 , .col-6, .col-4 {
+    .col-7, 
+    .col-5 , 
+    .col-6, 
+    .col-4 {
         width: 100%;
         margin: 0;
+    }
+
+    div.mobileStack {
+        width: 50%;
+        display: block;
     }
 
     div.box {
