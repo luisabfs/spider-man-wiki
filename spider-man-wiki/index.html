@@ -8,20 +8,37 @@
     <link rel="stylesheet" href="/spider-man-wiki/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/spider-man-wiki/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/spider-man-wiki/styles.css">
-    
 </head>
 
 <body>
-    <nav>
-        <ul class="topnav" id="topnavClick" >
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
-            <li class="topnav-right"><a href="#signin">Sign In</a></li>
-            <li class="dropdownIcon"><a href="javascript:void(0);" id="dropdownClick">&#9776;</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/brand_48px.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#news">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comics">Movies</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Comics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#amazing-fantasy">Amazing Fantasy</a>
+                    <a class="dropdown-item" href="#ultimate-spiderman">Ultimate Spider-Man</a>
+                    <a class="dropdown-item" href="#death-gwen-stacy">The Death of Gwen Stacy</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container-fluid" id="gradient">
@@ -56,32 +73,38 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Origin</label>
+                        <p>It starts with Peter acquiring spider-related abilities after a bite from a radioactive spider: clinging to surfaces, shooting spider-webs from wrist-mounted devices, and detecting danger with his "spider-sense".</p>
                     </div>
-                    <label>Origin</label>
-                    <p>It starts with Peter acquiring spider-related abilities after a bite from a radioactive spider: clinging to surfaces, shooting spider-webs from wrist-mounted devices, and detecting danger with his "spider-sense".</p>
                 </div>
             </div>
 
             <div class="col-sm-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+                <div class="card">
+                        <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Peter Parker</label>
+                        <p>Although a Marvel's super hero, he is famous for his ordinary life: difficulties with friends, family, sweethearts and employers. That inherent humanity, made him "the friendly neighbourhood Spider-Man".</p>
                     </div>
-                    <label>Peter Parker</label>
-                    <p>Although a Marvel's super hero, he is famous for his ordinary life: difficulties with friends, family, sweethearts and employers. That inherent humanity, made him "the friendly neighbourhood Spider-Man".</p>
                 </div>
             </div>
                 
             <div class="col-sm-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Villains</label>
+                        <p>Major villains that appeared in Spider-Man comics in 1964 included Electro, Mysterio, the Green Goblin, and Kraven the Hunter. In 1965 Scorpion appeared. In 1966 Rhino made his debut.</p>
                     </div>
-                    <label>Villains</label>
-                    <p>Major villains that appeared in Spider-Man comics in 1964 included Electro, Mysterio, the Green Goblin, and Kraven the Hunter. In 1965 Scorpion appeared. In 1966 Rhino made his debut.</p>
                 </div>
             </div>
         </div>
@@ -113,7 +136,7 @@
 
     <footer class="footsy">
         <div class="row">
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -122,7 +145,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -131,7 +154,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -140,7 +163,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
