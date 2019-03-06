@@ -28,10 +28,20 @@ button {
     border-radius: 7px;
 }
 
+form {
+    margin-top: 5%; 
+}
+
 .container-fluid {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    /* padding-top: 2%;
+    padding-bottom: 2%; */
+    padding: 0;
 } 
+
+.jumbotron {
+    background: none;
+    margin: 0;
+}
 
 .row{
     display: flex;
@@ -90,31 +100,30 @@ div.icon {
         ), 2px 2px 4px 2px rgba(0, 0, 0,.1);
 }
 
-.leftside-col {
+/* .leftside-col {
     margin-left: 20%;
 }
 
 .rightside-col {
     margin-left: 10%; 
-}
+} */
 
 .videoContainer iframe {
     position: inherit;
     margin: 0;
 } 
 
-h1.large {
+.display-4 {
     color: #fff;
-    font-size: 55px;
+    /* font-size: 55px;
     margin: 0;
-    line-height: 70px;
+    line-height: 70px; */
 }
 
-form h2 {
-    color: #fff;
-    font-size: 30px;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+h2.display-4 {
+    font-size:1.8rem;
+    /* margin-block-start: 10px;
+    margin-block-end: 10px; */
 }
 
 h1.section2Header {
