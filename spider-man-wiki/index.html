@@ -2,45 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Spider-Man Wiki</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/spider-man-wiki/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/spider-man-wiki/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/spider-man-wiki/styles.css">
 </head>
 
 <body>
-    <nav>
-        <ul class="topnav" id="topnavClick" >
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
-            <li class="topnav-right"><a href="#signin">Sign In</a></li>
-            <li class="dropdownIcon"><a href="javascript:void(0);" id="dropdownClick">&#9776;</a></li>
-        </ul>
-    </nav>
-
-    <div class="container" id="gradient">
-        <div class="row">
-            <div class="col-6">
-                <div class="leftside-col">
-                    <h1 class="large">Spider-Man Wiki</h1>
-                </div>
-                <form>
-                    <div class="leftside-col">
-                        <h2>Username</h2>
-                        <input class="inputbox" type="text" placeholder="Username">
-                        <h2>Password</h2>
-                        <input class="inputbox" type="text" placeholder="Password">
-                    </div>
-                </form>
-            </div>
-            <div class="col-6">
-                <div class="rightside-col">
-                    <div class="videoContainer">
-                            <iframe width="500" height="300" src="https://www.youtube.com/embed/_OvhY3MVACU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+    <div class="container-fluid" id="gradient">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/brand_48px.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comics">Movies</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Comics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#amazing-fantasy">Amazing Fantasy</a>
+                        <a class="dropdown-item" href="#ultimate-spiderman">Ultimate Spider-Man</a>
+                        <a class="dropdown-item" href="#death-gwen-stacy">The Death of Gwen Stacy</a>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="display-4">Spider-Man Wiki</h1>
+                        <form>
+                            <div >
+                                <h2 class="display-4">Username</h2>
+                                <input class="inputbox" type="text" placeholder="Username">
+                                <h2 class="display-4">Password</h2>
+                                <input class="inputbox" type="text" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="rightside-col">
+                            <div class="videoContainer">
+                                <iframe width="500" height="300" src="https://www.youtube.com/embed/_OvhY3MVACU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/meme_ass.jpg" class="d-block w-100" alt="...">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div> -->
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/meme_floor.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/meme_reading.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            <div class="col"></div>
         </div>
     </div>
 
@@ -48,57 +105,63 @@
         <h1 class="section2Header">Spider-Man Info</h1>
     </header>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Origin</label>
+                        <p>It starts with Peter acquiring spider-related abilities after a bite from a radioactive spider: clinging to surfaces, shooting spider-webs from wrist-mounted devices, and detecting danger with his "spider-sense".</p>
                     </div>
-                    <label>Origin</label>
-                    <p>It starts with Peter acquiring spider-related abilities after a bite from a radioactive spider: clinging to surfaces, shooting spider-webs from wrist-mounted devices, and detecting danger with his "spider-sense".</p>
                 </div>
             </div>
 
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+            <div class="col-sm-4">
+                <div class="card">
+                        <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Peter Parker</label>
+                        <p>Although a Marvel's super hero, he is famous for his ordinary life: difficulties with friends, family, sweethearts and employers. That inherent humanity, made him "the friendly neighbourhood Spider-Man".</p>
                     </div>
-                    <label>Peter Parker</label>
-                    <p>Although a Marvel's super hero, he is famous for his ordinary life: difficulties with friends, family, sweethearts and employers. That inherent humanity, made him "the friendly neighbourhood Spider-Man".</p>
                 </div>
             </div>
                 
-            <div class="col-4">
-                <div class="box">
-                    <div class="icon">
-                        <img src="images/spi.png">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
+                            <img src="images/spi.png">
+                        </div>
+                        <label>Villains</label>
+                        <p>Major villains that appeared in Spider-Man comics in 1964 included Electro, Mysterio, the Green Goblin, and Kraven the Hunter. In 1965 Scorpion appeared. In 1966 Rhino made his debut.</p>
                     </div>
-                    <label>Villains</label>
-                    <p>Major villains that appeared in Spider-Man comics in 1964 included Electro, Mysterio, the Green Goblin, and Kraven the Hunter. In 1965 Scorpion appeared. In 1966 Rhino made his debut.</p>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <button class="learnMore">Learn more</button>
+            <div class="col-sm-12">
+                <button id="learnMoreBt" class="learnMore">Learn more</button>
             </div>
         </div>
     </div>
 
     <hr>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-7">
+            <div class="col-sm-7">
                 <article>
                     <label>Curiosities</label>
                     <p>Peter Parker's parents were spies and got killed in a plane crash. Following their deaths, Peter went to live with his Aunt May and Uncle Ben. Later, Uncle Ben is murdered and the comic's most famous caption is attributed in later canon to him, moments before the murder: <b>"With great power there must also come - great responsibility!"</b></p>
                 </article>
             </div>
-            <div class="col-5">
+            <div class="col-sm-5">
                 <div class="resizeImg">
                     <img src="images/spiderman_sad.png">
                 </div>
@@ -108,7 +171,7 @@
 
     <footer class="footsy">
         <div class="row">
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -117,7 +180,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -126,7 +189,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -135,7 +198,7 @@
                 </ul>
             </div>
 
-            <div class="col-3 mobileStack">
+            <div class="col-sm-3 mobileStack">
                 <h1>Company</h1>
                 <ul>
                     <li>About</li>
@@ -148,5 +211,8 @@
     </footer>
 
     <script src="/spider-man-wiki/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/spider-man-wiki/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
